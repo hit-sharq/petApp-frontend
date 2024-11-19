@@ -9,6 +9,27 @@ export function Navbar() {
       {/* <NavLink to={"/overview"} className="text-wrapper-35">
           Overview
         </NavLink> */}
+
+<NavLink
+  to="/overview"
+  className={({ isActive, isPending }) => {
+    let className = "text-wrapper-36"; 
+    if (isActive) {
+      className += " active"; 
+    } else if (isPending) {
+      className += " pending"; 
+    }
+    return className;
+  }}
+  style={({ isActive, isPending }) => {
+    return {
+      color: isActive ? "green" : "white", 
+    };
+  }}
+>
+  Overview
+</NavLink>
+
 <NavLink
   to="/health"
   className={({ isActive, isPending }) => {
