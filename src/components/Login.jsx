@@ -8,7 +8,7 @@ import React from "react";
 // import rectangle8 from "./rectangle-8.svg";
 // import rectangle from "./rectangle.png";
 
-export const LogIn = () => {
+export const Login = () => {
   return (
     <div className="bg-[#86daa8] flex flex-row justify-center w-full h-[100vh]">
       <div className="bg-variable-collection-light-green w-[1512px] h-[982px] relative">
@@ -44,7 +44,7 @@ export const LogIn = () => {
           </div>
 
           <p className="absolute top-[646px] left-[184px] [font-family:'Instrument_Sans-Regular',Helvetica] font-normal text-[#797878] text-sm tracking-[0] leading-[normal] underline">
-            Dont have an account? Sign up
+            Don't have an account? Sign up
           </p>
 
           {/* <img
