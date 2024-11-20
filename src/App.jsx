@@ -4,8 +4,14 @@ import { Appointment } from "./components/Appointment";
 import { Navbar } from "./components/Navbar";
 
 import "./App.css";
+import "./index.css";
 import { Overview } from "./components/Overview";
 import { Health } from "./components/Health";
+import { Login } from "./components/Login";
+import { AddPet } from "./components/Addpet";
+import { Community } from "./components/Community";
+import { SignUp } from "./components/SignUp";
+
 
 const Layout = () => {
   return (
@@ -20,10 +26,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Overview />} />
+        <Route path="/login" index element={<Login />} />
+        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/overview" element={<Overview />} />
         <Route path="/health" element={<Health />} />
         <Route path="/appointment" element={<Appointment />} />
-        <Route path="*" element={<div>Page Not Found</div>} />
+        <Route path="/community" element={<Community/>} />
+        <Route path="/addpet" element={<AddPet/>} />
       </Route>
     </Routes>
   );

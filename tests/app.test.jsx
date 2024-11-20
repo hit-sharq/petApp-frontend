@@ -1,0 +1,1 @@
+// Tests the app.jsx file
