@@ -8,6 +8,7 @@ import "./index.css";
 import { Overview } from "./components/Overview";
 import { Health } from "./components/Health";
 import { Login } from "./components/Login";
+import { Log } from "./components/Log";
 import { AddPet } from "./components/Addpet";
 import { Community } from "./components/Community";
 import { SignUp } from "./components/SignUp";
@@ -27,6 +28,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Login />} />
+        <Route path="/log" element={<Log />} />
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/overview" element={<Overview />} />
         <Route path="/health" element={<Health />} />
