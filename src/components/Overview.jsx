@@ -773,52 +773,6 @@ export const Overview = () => {
             Add a reminder
           </div>
         </div>
-
-        <div className='flex flex-col w-[1512px] items-start gap-2.5 px-5 py-2.5 absolute top-0 -left-px bg-variable-collection-primary-color'>
-          <div className='flex items-center gap-[131px] relative self-stretch w-full flex-[0_0_auto]'>
-            <div className='relative w-[169.64px] h-[64.49px]'>
-              {/* <img
-                className='absolute w-[62px] h-16 top-0 left-0 object-cover'
-                alt='Logo'
-                src={logo1}
-              /> */}
-
-              {/* <img
-                className='absolute w-[102px] h-[25px] top-[23px] left-[68px]'
-                alt='Pet pal'
-                src={petPal}
-              /> */}
-            </div>
-
-            <div className='inline-flex items-center gap-11 relative flex-[0_0_auto]'>
-              {/* <img
-                className='relative w-[52px] h-[52px]'
-                alt='Mynaui notification'
-                src={mynauiNotificationSolid}
-              /> */}
-
-              <div className='inline-flex items-center gap-3.5 px-0 py-[7px] relative flex-[0_0_auto]'>
-                {/* <img
-                  className='relative w-[58px] h-[61px] object-cover'
-                  alt='Lilly'
-                  src={lilly1}
-                /> */}
-
-                {/* <img
-                  className='relative w-[27px] h-[27px]'
-                  alt='Oui arrow up'
-                  src={ouiArrowUp}
-                /> */}
-              </div>
-
-              {/* <img
-                className='relative w-[55px] h-[55px]'
-                alt='Iconamoon settings'
-                src={iconamoonSettingsFill}
-              /> */}
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )

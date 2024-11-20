@@ -53,13 +53,22 @@
   position: relative;
   width: 169.64px;
 } */
+
+
 .navbar {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 1450px;
   padding: 20px 0 20px 0;
-  background-color: var(--variable-collection-primary-color);
-  height: 5rem;
+  justify-content: space-between;
+}
+
+.navbar-main{
+  background-color: var(--variable-collection-primary-color); 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar a {

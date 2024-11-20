@@ -80,7 +80,7 @@ export const SignUp = () => {
           <div className="absolute w-[314px] h-[62px] top-[575px] left-[136px]">
             <div className="relative w-[312px] h-[62px] bg-[#39628e] rounded-lg">
               <div className="absolute top-4 left-[72px] [font-family:'Instrument_Sans-Regular',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
-                Create account
+                <a href="/login">Create account</a>
               </div>
             </div>
           </div>
@@ -104,11 +104,11 @@ export const SignUp = () => {
           </div>
         </div>
 
-        {/* <img
-          className="absolute w-[597px] h-[903px] top-[35px] left-[871px]"
+        <img
+          className="absolute w-[597px] h-[903px] top-[35px] left-[871px] rounded-lg"
           alt="Rectangle"
-          src={rectangle8}
-        /> */}
+          src='/sign.png'
+        />
       </div>
     </div>
   );

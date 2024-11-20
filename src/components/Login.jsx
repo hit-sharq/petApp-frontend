@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 // import deviconApple from "./devicon-apple.svg";
 // import flatColorIconsGoogle from "./flat-color-icons-google.svg";
 // import layer11 from "./layer-1-1.png";
@@ -44,7 +45,8 @@ export const Login = () => {
           </div>
 
           <p className="absolute top-[646px] left-[184px] [font-family:'Instrument_Sans-Regular',Helvetica] font-normal text-[#797878] text-sm tracking-[0] leading-[normal] underline">
-            Don't have an account? Sign up
+          <a href="/signup">Don't have an account? Sign up</a>
+            
           </p>
 
           {/* <img
@@ -80,7 +82,7 @@ export const Login = () => {
           <div className="absolute w-[314px] h-[62px] top-[575px] left-[136px]">
             <div className="relative w-[312px] h-[62px] bg-[#39628e] rounded-lg">
               <div className="absolute top-4 left-[123px] [font-family:'Instrument_Sans-Regular',Helvetica] font-normal text-white text-2xl tracking-[0] leading-[normal]">
-                Log in
+                <a href="/addpet">Log in</a>
               </div>
             </div>
           </div>
@@ -104,11 +106,11 @@ export const Login = () => {
           </div>
         </div>
 
-        {/* <img
-          className="absolute w-[595px] h-[902px] top-[34px] left-[877px]"
+        <img
+          className="absolute w-[595px] h-[902px] top-[34px] left-[877px] rounded-lg "
           alt="Rectangle"
-          src={rectangle8}
-        /> */}
+          src='/log.png'
+        />
       </div>
     </div>
   );
