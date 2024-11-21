@@ -1,0 +1,27 @@
+.body{
+    margin: auto;
+    padding: 0%;
+}
+
+
+  
+  .calendar-div1 {
+    width: 90rem; 
+    margin-left: 30%;
+   
+    
+    
+   
+   
+  }
+
+  .react-calendar {
+    width: 120rem; /* Make the calendar fill its container */
+    
+    font-size: 1.5rem; /* Increase font size inside the calendar */
+    
+    
+  }
+  
+ 
+ 

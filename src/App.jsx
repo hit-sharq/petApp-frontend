@@ -9,6 +9,7 @@ import { Health } from "./components/Health";
 import { Login } from "./components/Login";
 import { AddPet } from "./components/Addpet";
 import { Community } from "./components/Community";
+import { MakeAppointment } from "./components/MakeAppointment";
 import { SignUp } from "./components/SignUp";
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/community" element={<Community/>} />
         <Route path="/addpet" element={<AddPet/>} />
+        <Route path="/makeAppointment" element={<MakeAppointment/>} />
       </Route>
     </Routes>
   );
