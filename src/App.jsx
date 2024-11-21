@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { Routes, Route, Outlet } from "react-router-dom";
 import { Appointment } from "./components/Appointment";
 import { Navbar } from "./components/Navbar";
@@ -9,7 +10,10 @@ import { Health } from "./components/Health";
 import { Login } from "./components/Login";
 import { AddPet } from "./components/Addpet";
 import { Community } from "./components/Community";
+import { MakeAppointment } from "./components/MakeAppointment";
 import { SignUp } from "./components/SignUp";
+import { ProfilePage } from "./components/ProfilePage";
+import { SettingsPage } from "./components/SettingsPage";
 
 
 const Layout = () => {
@@ -22,6 +26,30 @@ const Layout = () => {
 };
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check if the user has dark mode enabled in localStorage
+    const savedMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(savedMode);
+    if (savedMode) {
+      document.body.classList.add("dark-mode");
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("darkMode", "true");
+    } else {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("darkMode", "false");
+    }
+  };
+
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -33,6 +61,9 @@ function App() {
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/community" element={<Community/>} />
         <Route path="/addpet" element={<AddPet/>} />
+        <Route path="/makeAppointment" element={<MakeAppointment/>} />
+        <Route path="profilePage" element={<ProfilePage />} />
+        <Route path="/settingsPage" element={<SettingsPage onLogout={() => alert("Logging out!")} toggleDarkMode={toggleDarkMode} />} />
       </Route>
     </Routes>
   );
