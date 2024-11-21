@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { IoMdSettings } from "react-icons/io";
 
 import '../Navbar.css'
 
@@ -92,9 +93,15 @@ export function Navbar() {
             </NavLink>
           </div>
         </div>
-        <div className='w-[] h-[60px] object-contain flex justify-center '>
+        <div className='w-[60px] h-[10px] object-contain flex justify-center mb-10 '>
           <NavLink to='/profilePage'>
-          <img src='/petsettings.png' alt='' />
+          <img src='/Lilly.png' alt='' />
+          </NavLink>
+        </div>
+
+        <div className='w-[1px] h-[100px] object-contain flex justify-center mb-30 '>
+          <NavLink to='/settingsPage'>
+          <IoMdSettings className='w-[100px] h-[100]'  />
           </NavLink>
         </div>
       </div>
