@@ -93,7 +93,7 @@ export function Navbar() {
           </div>
         </div>
         <div className='w-[] h-[60px] object-contain flex justify-center '>
-          <NavLink to='/login'>
+          <NavLink to='/profilePage'>
           <img src='/petsettings.png' alt='' />
           </NavLink>
         </div>

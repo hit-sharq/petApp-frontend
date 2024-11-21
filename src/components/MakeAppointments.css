@@ -1,0 +1,75 @@
+/* General container */
+.appointment-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search bar */
+.search-bar-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-bar-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(56, 97, 141, 1);
+  border-radius: 5px;
+}
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(56, 97, 141, 1);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: rgba(56, 97, 141, 0.1);
+}
+
+/* Form styling */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: rgba(56, 97, 141, 1);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(56, 97, 141, 1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: rgba(56, 97, 141, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: rgba(56, 97, 141, 0.5);
+  cursor: not-allowed;
+}
