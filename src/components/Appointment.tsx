@@ -69,7 +69,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -87,7 +87,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -105,7 +105,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -123,7 +123,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -141,7 +141,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -159,7 +159,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -177,7 +177,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
@@ -195,7 +195,7 @@ export const Appointment = () => {
 
             <div className="button-greys">
               <div className="container">
-                <div className="label">Reschedule</div>
+                <button className="label">Reschedule</button>
               </div>
             </div>
 
