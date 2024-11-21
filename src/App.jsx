@@ -11,6 +11,7 @@ import { AddPet } from "./components/Addpet";
 import { Community } from "./components/Community";
 import { MakeAppointment } from "./components/MakeAppointment";
 import { SignUp } from "./components/SignUp";
+import { ProfilePage } from "./components/ProfilePage";
 
 
 const Layout = () => {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/community" element={<Community/>} />
         <Route path="/addpet" element={<AddPet/>} />
         <Route path="/makeAppointment" element={<MakeAppointment/>} />
+        <Route path="profilePage" element={<ProfilePage />} />
       </Route>
     </Routes>
   );
